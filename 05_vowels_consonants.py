@@ -5,12 +5,8 @@ def count_vowels_consonants(string):
     vowels = 0
     consonants = 0
 
-    for idx, ch in enumerate(string.lower()):
-        if ch == 'a' or \
-           ch == 'e' or \
-           ch == 'i' or \
-           ch == 'o' or \
-           ch == 'u':
+    for _, ch in enumerate(string.lower()):
+        if ch in ('a', 'e', 'i', 'o', 'u'):
             vowels += 1
         else:
             consonants += 1
