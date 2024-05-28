@@ -1,6 +1,6 @@
-'''
-foo
-'''
+"""
+Count a character in a string.
+"""
 def count_char_in_string(string, char):
     """
     Count a character in a string.
@@ -11,8 +11,13 @@ def count_char_in_string(string, char):
             count += 1
     return count
 
-print(count_char_in_string('foo', 'f'))
-print(count_char_in_string('foo', 'F'))
-print(count_char_in_string('foo', 'o'))
-print(count_char_in_string('', 'f'))
-print(count_char_in_string('foo', ''))
+strings = (
+    ('foo', 'f'),
+    ('foo', 'F'),
+    ('foo', 'o'),
+    (''   , 'f'),
+    ('foo', '' ),
+)
+
+for string, char in strings:
+    print(string + ':' + char + ' : ' + str(count_char_in_string(string, char)))
