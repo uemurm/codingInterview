@@ -16,6 +16,6 @@ def count_vowels_consonants(string):
 
 strings = ['foo', 'Foo', 'fOo', 'F', '']
 for i, s in enumerate(strings):
-    print(s)
+    print('"' + s + '"')
     count_vowels_consonants(s)
     print()
