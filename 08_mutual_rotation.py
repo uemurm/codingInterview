@@ -1,6 +1,9 @@
+"""
+Determine if strings are a mutual rotation.
+"""
 def are_mutual_rotation(str0, str1):
     """
-    docstring
+    Determine if strings are a mutual rotation.
     """
     if not len(str0) == len(str1):
         return False
@@ -11,7 +14,8 @@ pairs = (
     ('', ''),
     ('', 'a'),
     ('a', ''),
-    ('foo', 'ofo')
+    ('foo', 'ofo'),
 )
-for pair in pairs:
-    print(pair[0] + ', ' + pair[1] + ': ' + str(are_mutual_rotation(pair[0], pair[1])))
+
+for s0, s1 in pairs:
+    print(f'"{s0}", "{s1}" :\t' + str(are_mutual_rotation(s0, s1)))
