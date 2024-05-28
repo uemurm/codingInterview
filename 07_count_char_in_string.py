@@ -6,7 +6,7 @@ def count_char_in_string(string, char):
     Count a character in a string.
     """
     count = 0
-    for idx, ch in enumerate(string):
+    for ch in list(string):
         if char == ch:
             count += 1
     return count
@@ -19,5 +19,5 @@ strings = (
     ('foo', '' ),
 )
 
-for string, char in strings:
-    print(string + ':' + char + ' : ' + str(count_char_in_string(string, char)))
+for s, c in strings:
+    print(s + ':' + c + ' : ' + str(count_char_in_string(s, c)))
