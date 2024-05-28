@@ -1,15 +1,19 @@
+"""
+Determine if they're anagrams.
+"""
+
 def are_anagrams(str0, str1):
     """
-    docstring
+    Determine if they're anagrams.
     """
     str0 = str0.replace(' ', '')
-    str1 = str0.replace(' ', '')
+    str1 = str1.replace(' ', '')
     if not len(str0) == len(str1):
         return False
 
     return ''.join(sorted(str0)) == ''.join(sorted(str1))
 
-strings = (
+string_pairs = (
     ('', ''),
     ('', 'a'),
     ('a', 'b'),
@@ -29,8 +33,7 @@ strings = (
     ('Florence Nightingale', 'Flit on cheering angel')
 )
 
-
-for pair in strings:
+for pair in string_pairs:
     STR0 = pair[0]
     STR1 = pair[1]
     print('"' + STR0 + '" and "' + STR1 + '" are ', end='')
