@@ -1,2 +1,11 @@
 This is an example string 234
 Bob wins the game
+H3llo w0rld! This is a t3st.
+The cat and dog ran
+a b c 123 $%^ 
+Valid123 inv@lid n0t good b@d
+UPPER lower MiXeD
+rhythm aei sky
+Supercalifragilisticexpialidocious
+The the the is is is valid valid valid
+
