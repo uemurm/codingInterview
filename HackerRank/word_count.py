@@ -50,9 +50,9 @@ def countValidWords(string):
     valid_words = [word for word in string.split() if is_valid_word(word)]
     return len(valid_words)
 
-debug = '-d' or '--debug' in sys.argv
+debug = '--debug' in sys.argv or \
+             '-d' in sys.argv
 
-s = input()
-list_words(s)
-# result = countValidWords(s)
-# print(result)
+# list_words(input())
+result = countValidWords(input())
+print(result)
