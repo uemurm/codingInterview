@@ -1,3 +1,6 @@
+"""
+Count valid words.
+"""
 import sys
 
 ALPHABETS = 'abcdefghijklmnopqrstuvwxyz'
